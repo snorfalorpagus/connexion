@@ -40,7 +40,7 @@ Then we create a format checker function for that type of value:
 
     def is_money(val):
         if not isinstance(val, str):
-            return True
+            return False
         return MONEY_RE.match(val)
 
 The format checker function is expected to return `True` when the
